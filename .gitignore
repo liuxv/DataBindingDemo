@@ -25,3 +25,17 @@ proguard/
 
 # Log Files
 *.log
+
+# other ignore
+.idea/
+.gradle/
+out/
+obj/
+.DS_Store
+.settings
+*.iml
+*.pyc
+.metadata
+.settings
+gradle.properties
+

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">DataBinding</string>
+
+    <string name="hero_title">魔兽英雄</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="menu_gift">我的礼品</string>
+    <string name="menu_favorite">我的收藏</string>
+    <string name="menu_travel">我的旅行</string>
+    <string name="menu_shopping">我的购物车</string>
+    <string name="menu_pay">我的银行卡</string>
+
+    <string name="intro">简介</string>
+    <string name="background">背景</string>
+    <string name="friend">相关</string>
+
+
+</resources>

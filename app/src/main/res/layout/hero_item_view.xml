@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:auto="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="com.liuxv.databinding.utils.HeroUtils"/>
+
+        <variable
+            name="hero"
+            type="com.liuxv.databinding.mvc.model.HeroModel"/>
+    </data>
+
+    <com.liuxv.databinding.mvc.view.HeroView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <com.liuxv.databinding.view.AsyncImageView
+            android:id="@+id/hero_avatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:scaleType="centerInside"
+            auto:imageUrl="@{hero.name}"
+            auto:error="@{@drawable/war3}"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hero_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@{hero.name}"
+                android:textColor="@{HeroUtils.getHeroStatus(hero.status)? @color/red : @color/black}"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/hero_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:maxLines="3"
+                android:text="@{hero.detail}"
+                android:textColor="@{HeroUtils.getHeroStatus(hero.status)? @color/red : @color/black}"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+
+    </com.liuxv.databinding.mvc.view.HeroView>
+</layout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_gift"
+            android:icon="@drawable/explore_gift"
+            android:title="@string/menu_gift"/>
+
+        <item
+            android:id="@+id/menu_favorite"
+            android:icon="@drawable/explore_favorite"
+            android:title="@string/menu_favorite"/>
+
+        <item
+            android:id="@+id/menu_travel"
+            android:icon="@drawable/explore_travel"
+            android:title="@string/menu_travel"/>
+
+    </group>
+
+    <item android:title="Shopping">
+
+        <menu>
+            <item
+                android:id="@+id/menu_shopping"
+                android:icon="@drawable/explore_shopping_cart"
+                android:title="@string/menu_shopping"/>
+
+            <item
+                android:id="@+id/menu_pay"
+                android:icon="@drawable/explore_payment"
+                android:title="@string/menu_pay"/>
+        </menu>
+
+    </item>
+
+</menu>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--controller tag-->
+    <item name="card_controller" type="id"/>
+    <item name="card_type" type="id"/>
+    <item name="tag_model" type="id"/>
+    <item name="header_controller" type="id"/>
+    <item name="header_type" type="id"/>
+
+</resources>
